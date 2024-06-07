@@ -1,27 +1,26 @@
 <!DOCTYPE html>
+<html lang="es">
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <title>Fiestas Badalona - Mejores Chefs</title>
+</head>
+
+<body class="box-border p-0 m-0 max-w-[100dvw]">
+  <include src="./views/header.html"></include>
+  <main
+    class="p-[10px] mx-auto text-responsive text-center tablet:text-[1.1rem] tablet:max-w-[80dvw] desktop:text-[1.3rem] desktop:px-[10px] desktop:max-w-[1400px]">
+    <h2
+      class="mt-[2dvh] mb-[2dvh] font-bold text-2xl tablet:mt-tablet tablet:text-3xl tablet:mb-tablet desktop:text-4xl">
+      Los maestros paelleros</h2>
+    <include src="./views/authors.html"></include>
+  </main>
+  <include src="./views/footer.html"></include>
+
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

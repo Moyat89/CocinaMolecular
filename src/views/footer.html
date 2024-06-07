@@ -1,3 +1,38 @@
-<footer class="uoc-footer">
-    &copy; Universitat Oberta de Catalunya
+<footer class="bg-secondary text-white">
+  <div class="pt-[5%] tablet:pt-[1.5%] text-center h-[14dvh]">
+    <p class="tablet:text-lg desktop:text-xl">¡Inscripciones abiertas!<br>Inscribete a través de nuestro <a
+        href="./inscripcion.html" class="font-bold">formulario</a> o envia un
+      e-mail a <a href="#" target="_blank" class="font-bold">mejorpaella@bdn.com</a> para participar</p>
+  </div>
+  <hr class="invisible h-[1dvh] desktop:visible my-auto mx-[5dw] text-primary desktop:my-auto desktop:mx-[10dvw]">
+  <nav class="px-[2dvw] bg-secondary grid grid-cols-footer-responsive min-h-header-responsive tablet:mx-[2dw] tablet:px-0 tablet:h-tablet tablet:grid-cols-footer-tablet desktop:h-desktop desktop:p-desktop desktop:grid-cols-footer-desktop desktop:text-xl desktop:px-[10dvw] text-white ">
+    <a class="font-cookie my-auto hover:text-primary hvr-icon-spin " href="./index.html">
+      <div class="box-border flex flex-col w-20 items-center leading-[7px]">
+        <img src="./assets/images/badalona-logo.png" class="logo__image w-10 h-10 ">
+        <br>
+        <span class="tablet:text-xl/[7px] desktop:text-3xl/[7px]">BadaPaellas</span>
+      </div>
+    </a>
+    <div class="invisible font-bold flex gap-x-10 gap-x-10 text-center w-[40dvw] tablet:pl-[initial] tablet:pr-[initial] tablet:w-[initial] desktop:visible desktop:gap-x-[50px] desktop:my-auto">
+      <a href="./index.html" class="links__item hover:text-primary leading-[2] relative py-0 m-auto after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-middle after:h-[3px] after:bg-primary ">Maestros Paelleros</a>
+      <a href="./inscripcion.html" class="links__item hover:text-primary leading-[2] relative py-0 m-auto after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition-all after:origin-middle after:h-[3px] after:bg-primary">Inscripción</a>
+    </div>
+    <div class="mt-auto mb-auto text-right tablet:text-xl">
+      <a href="#" title="Link a cuenta en Instagram" class="font-bold"><i
+          class="fa-brands fa-square-instagram hvr-grow text-lg hover:text-primary desktop:text-2xl ml-0.5 "></i></a>
+      <a href="#" title="Link a cuenta en Twitter" class="font-bold"><i class="fa-brands hover:text-primary fa-twitter hvr-grow text-lg ml-0.5 desktop:text-2xl"></i></a>
+      <a href="#" title="Link a cuenta en Facebook" class="font-bold"><i class="fa-brands fa-facebook hvr-grow hover:text-primary text-lg ml-0.5 desktop:text-2xl"></i></a>
+    </div>
+  </nav>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var currentPage = window.location.pathname;
+    var pages = document.querySelectorAll('.links__item');
+    pages.forEach(function (link) {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('current');
+      }
+    });
+  });
+</script>

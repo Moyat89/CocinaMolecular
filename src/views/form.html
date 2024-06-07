@@ -1,0 +1,52 @@
+<form name="inscripcion" method="POST" data-netlify="true" action="exito.html"
+    class="text-center flex flex-col items-center mt-[2dvh] mb-[2dvh]">
+    <div>
+        <label for="name" class="text-center bg-white mt-2.5 mb-2.5 block font-bold">Nombre y
+            Apellidos:</label>
+        <input type="text" id="name" name="name"
+            class="text-center bg-white mt-2.5 mb-2.5 w-[75dvw] h-[40px] rounded-3xl border-[#dcdcdc] border-[1px] focus:border-primary focus:outline-none focus:shadow-form-shadow tablet:w-80  tablet:text-[1.1rem]"
+            minlength="3" required>
+    </div>
+    <div>
+        <label for="email" class="text-center bg-white mt-2.5 mb-2.5 block font-bold">E-mail:</label>
+        <input type="email" id="email" name="email"
+            class="text-center bg-white mt-2.5 mb-2.5 w-[75dvw] h-[40px] rounded-3xl border-[#dcdcdc] border-[1px] focus:border-primary focus:outline-none focus:shadow-form-shadow tablet:w-80  tablet:text-[1.1rem]"
+            required>
+    </div>
+    <div>
+        <label for="tipo_paella" class="text-center bg-white mt-2.5 mb-2.5 block font-bold">Tipo de
+            paella:</label>
+        <select id="tipo_paella" name="tipo_paella"
+            class="text-center bg-white mt-2.5 mb-2.5 w-[75dvw] h-[40px] rounded-3xl text-sm border-[#dcdcdc] border-[1px] focus:border-primary focus:outline-none focus:shadow-form-shadow tablet:w-80 tablet:text-[1.1rem] "
+            required>
+            <option value="" disabled selected>Elige tu tipo de paella</option>
+            <option value="val">Valenciana</option>
+            <option value="mar">Mar</option>
+            <option value="mon">Montaña</option>
+            <option value="mixta">Mixta</option>
+            <option value="otra">Otra</option>
+        </select>
+    </div>
+    <div>
+        <label for="dia_concurso" class="text-center bg-white mt-2.5 mb-2.5 block font-bold">Día del
+            concurso:</label>
+        <select id="dia_concurso" name="dia_concurso"
+            class="text-center bg-white mt-2.5 mb-2.5 w-[75dvw] h-[40px] rounded-3xl text-sm border-[#dcdcdc] border-[1px] focus:border-primary focus:outline-none focus:shadow-form-shadow tablet:w-80 tablet:text-[1.1rem]"
+            required>
+            <option value="" disabled selected>Elige tu dia</option>
+            <option value="vie">Viernes</option>
+            <option value="sat">Sábado</option>
+            <option value="dom">Domingo</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox"
+            class="bg-white mt-2.5 mb-2.5  h-10 focus:border-primary focus:outline-none focus:shadow-form-shadow "
+            id="acceptTerms" required>
+        <label class="bg-white mt-2.5 mb-2.5" for="acceptTerms">Acepto los términos y
+            condiciones</label>
+    </div>
+    <div>
+        <button type="submit" class="btn-form">Inscribirse</button>
+    </div>
+</form>
